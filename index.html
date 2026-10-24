@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abrazos Gratis · Sin preguntas, sin condiciones</title>
+  <meta name="description" content="Reparto abrazos gratis las 24 horas. Sin cita, sin preguntas y sin letra pequeña." />
+  <meta name="theme-color" content="#12061f" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤗</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="glow glow--one" aria-hidden="true"></div>
+  <div class="glow glow--two" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">🤗</span>
+      <span class="brand__text">Abrazos<em>Gratis</em></span>
+    </a>
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="#como">Cómo funciona</a>
+      <a href="#precios">Precios</a>
+      <a class="nav__cta" href="#abrazo">Pedir abrazo</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="pill">
+        <span class="dot" aria-hidden="true"></span>
+        Abierto ahora · 24 / 7 · 365 días
+      </p>
+
+      <h1 class="hero__title">
+        Abrazos gratis.<br />
+        <span class="grad">Sin letra pequeña.</span>
+      </h1>
+
+      <p class="hero__sub">
+        Llevamos desde 2026 repartiendo abrazos de forma totalmente desinteresada.
+        No pedimos email, ni tarjeta, ni que sonrías si no te apetece.
+      </p>
+
+      <div class="hero__actions">
+        <button class="btn btn--primary" id="hugBtn" type="button">
+          <span aria-hidden="true">🤗</span> Dame un abrazo
+        </button>
+        <a class="btn btn--ghost" href="#como">Ver cómo funciona</a>
+      </div>
+
+      <p class="counter">
+        <strong id="hugCount">0</strong>
+        abrazos repartidos en este navegador
+        <span class="counter__note">(los contamos aquí, no en tu cuenta: no hay cuentas)</span>
+      </p>
+
+      <p class="message" id="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="cards" id="como">
+      <h2 class="section__title">Cómo funciona</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">1️⃣</span>
+          <h3>Pides un abrazo</h3>
+          <p>Pulsas el botón. No hay formulario, no hay captcha, no hay newsletter.</p>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">2️⃣</span>
+          <h3>Recibes un abrazo</h3>
+          <p>Uno de nuestros 3.412 embajadores te manda buena energía en formato digital.</p>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">3️⃣</span>
+          <h3>Se lo pasas a alguien</h3>
+          <p>La única condición del abrazo es que no te lo quedes para ti. Eso es todo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing" id="precios">
+      <h2 class="section__title">Precios</h2>
+      <div class="price">
+        <p class="price__tag">Plan Único · Vitalicio</p>
+        <p class="price__amount">0<small>€ / siempre</small></p>
+        <ul class="price__list">
+          <li>Abrazos ilimitados</li>
+          <li>Sin anuncios (no sabemos ponerlos)</li>
+          <li>Sin permanencia: te vas cuando quieras</li>
+          <li>Soporte emocional de nivel básico pero honesto</li>
+        </ul>
+        <button class="btn btn--primary" id="hugBtn2" type="button">Contratar por 0 €</button>
+      </div>
+    </section>
+
+    <section class="contact" id="abrazo">
+      <h2 class="section__title">Pide el tuyo</h2>
+      <p class="contact__sub">Un clic. Eso es todo el onboarding.</p>
+      <button class="btn btn--big" id="hugBtn3" type="button">
+        <span aria-hidden="true">🫂</span> Quiero mi abrazo
+      </button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Hecho con cariño (y bastante CSS) · <span id="year"></span> AbrazosGratis</p>
+    <p class="footer__small">
+      Este sitio no recoge datos personales. El contador vive en tu navegador y muere con él.
+    </p>
+  </footer>
+
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

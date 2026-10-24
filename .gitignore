@@ -1,0 +1,21 @@
+# Dependencias
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Entorno
+.env
+.env.*
+!.env.example
